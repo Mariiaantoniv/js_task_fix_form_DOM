@@ -8,8 +8,8 @@ forms.forEach((form) => {
   inputs.forEach((input) => {
     const label = document.createElement('label');
 
-    label.class = 'filed-label';
-    label.htmlFrom = input.id;
+    label.className = 'filed-label';
+    label.for = input.id;
     label.textContent = `${input.name}`.toUpperCase();
     input.placeholder = `${input.name[0].toUpperCase()}${input.name.slice(1).toLowerCase()}`;
     input.parentElement.insertBefore(label, input);
